@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="CabelloCategoria">
+        <item>¿Tu personaje tiene cabello?</item>
+        <item>¿El color del cabello de tu personaje es cafe?</item>
+        <item>¿El color del cabello de tu personaje es azul?</item>
+        <item>¿El color del cabello de tu personaje es negro?</item>
+        <item>¿El color del cabello de tu personaje es amarillo?</item>
+        <item>¿El color del cabello de tu personaje es gris?</item>
+    </string-array>
+
+    <string-array name="SombreroCategoria">
+        <item>¿Tú personaje tiene algún tipo de sombrero?</item>
+        <item>¿El color del sombrero de tu personaje es azul?</item>
+        <item>¿El color del sombrero de tu personaje es esmeralda?</item>
+        <item>¿El color del sombrero de tu personaje es cafe?</item>
+        <item>¿El color del sombrero de tu personaje es negro?</item>
+        <item>¿El color del sombrero de tu personaje es morado?</item>
+    </string-array>
+
+    <string-array name="AccesorioCategoria">
+        <item>¿Tú personaje tiene algún tipo de accesorio en la espalda?</item>
+        <item>¿El accesorio es de color esmeralda?</item>
+        <item>¿El accesorio es de color plata?</item>
+        <item>¿El accesorio es de color negro?</item>
+        <item>¿El accesorio es de color azul?</item>
+    </string-array>
+
+    <string-array name="MascaraCategoria">
+        <item>¿Tú personaje tiene máscara?</item>
+        <item>¿La máscara de tu personaje es color azul?</item>
+        <item>¿La máscara de tu personaje tiene color verde?</item>
+        <item>¿La máscara de tu personaje tiene color cafe?</item>
+        <item>¿La máscara de tu personaje tiene color morado?</item>
+        <item>¿La máscara de tu personaje tiene color blanco?</item>
+    </string-array>
+
+    <string-array name="AnteojosCategoria">
+        <item>¿Tu personaje tiene anteojos, vendas o parches?</item>
+        <item>¿Los anteojos de tu personaje son cafe?</item>
+        <item>¿Los anteojos de tu personaje son blanco?</item>
+        <item>¿Los anteojos de tu personaje son transparente?</item>
+        <item>¿Los anteojos de tu personaje son rosa?</item>
+        <item>¿Los anteojos de tu personaje son azul?</item>
+        <item>¿Los anteojos de tu personaje son negro?</item>
+    </string-array>
+
+    <string-array name="CapaCategoria">
+        <item>¿Tu personaje tiene capa?</item>
+        <item>¿La capa es de color azul?</item>
+        <item>¿La capa es de color blanco?</item>
+    </string-array>
+
+    <string-array name="TatuajesCategoria">
+        <item>¿Tu personaje tiene tatuajes en el rostro?</item>
+        <item>¿Los tatuajes son de color morado?</item>
+        <item>¿Los tatuajes son de color verde?</item>
+        <item>¿Los tatuajes son de color azul?</item>
+        <item>¿Los tatuajes son de color negro?</item>
+        <item>¿Los tatuajes son de color dorado?</item>
+    </string-array>
+
+    <string-array name="PielCategoria">
+        <item>¿El color de piel de tu personaje es obscuro?</item>
+        <item>¿El color de piel de tu personaje es claro?</item>
+        <item>¿El color de piel de tu personaje es verde?</item>
+        <item>¿El color de piel de tu personaje es azul?</item>
+    </string-array>
+
+    <string-array name="SexoCategoria">
+        <item>¿Tu personaje es de sexo masculino?</item>
+        <item>¿Tu personaje es de sexo femenino?</item>
+    </string-array>
+
+    <string-array name="categorias">
+        <item>cabello</item>
+        <item>sombrero</item>
+        <item>accesorio</item>
+        <item>máscara</item>
+        <item>anteojos</item>
+        <item>tatuajes</item>
+        <item>piel</item>
+        <item>sexo</item>
+    </string-array>
+</resources>
