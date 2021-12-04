@@ -9,6 +9,7 @@ import android.widget.Button
 class MenuPrincipal : AppCompatActivity() {
 
     private lateinit var btnUnJugador : Button
+    private lateinit var btnPersonajes : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,9 +19,16 @@ class MenuPrincipal : AppCompatActivity() {
         this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
 
         btnUnJugador = findViewById(R.id.btnUnJugador)
+        btnPersonajes = findViewById(R.id.btnPersonajes)
 
         btnUnJugador.setOnClickListener {
             val intent = Intent(this, UnJugadorActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        btnPersonajes.setOnClickListener {
+            val intent = Intent(this, ListaPersonajes::class.java)
             startActivity(intent)
             finish()
         }

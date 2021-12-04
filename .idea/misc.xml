@@ -3,17 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/drawable/customborder.xml" value="0.2703125" />
         <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/drawable/ic_glasses_solid.xml" value="0.2703125" />
         <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/drawable/ic_hat_cowboy_side_solid.xml" value="0.2703125" />
         <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/drawable/ic_human_svgrepo_com.xml" value="0.2703125" />
         <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/drawable/ic_mask_solid.xml" value="0.2703125" />
         <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/drawable/ic_venus_mars_solid.xml" value="0.2703125" />
+        <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/layout/activity_lista_personajes.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/layout/activity_un_jugador.xml" value="0.176" />
+        <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/layout/activity_un_jugador.xml" value="0.264" />
         <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/layout/fragment_categorias.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/layout/fragmet_preguntas.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/layout/item_pregunta.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/layout/item_superhero.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/layout/layout_fin_partida.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/layout/lista_personajes.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/hellb/Documents/7mo Semestre/Programacion de dispositivos moviles/Proyecto Final/AdivinaQuien/app/src/main/res/layout/menu_principal_activity.xml" value="0.3026041666666667" />
       </map>
     </option>

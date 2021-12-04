@@ -35,6 +35,7 @@ class FinPartidaFragment (context: Context, message: String, puntos : Int, movim
 
         btnSalir.setOnClickListener {
             val intent = Intent(context, MenuPrincipal::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             context.startActivity(intent)
             val actvty = context as Activity
             actvty.finish()

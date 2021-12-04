@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_AdivinaQuien_DD">
         <activity
-            android:name=".UnJugadorActivity"
+            android:name=".ListaPersonajes"
             android:exported="false"
             android:screenOrientation="landscape"/>
+        <activity
+            android:name=".UnJugadorActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
         <activity
             android:name=".MenuPrincipal"
             android:exported="true"

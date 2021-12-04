@@ -1,6 +1,9 @@
 package com.example.proyectofinal_adivinaquien_dd
 
+import android.content.ContentValues
 import android.content.Intent
+import android.database.DatabaseUtils
+import android.database.sqlite.SQLiteOpenHelper
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
@@ -16,6 +19,8 @@ import com.example.proyectofinal_adivinaquien_dd.fragments.CategoriasFragment
 import com.example.proyectofinal_adivinaquien_dd.fragments.FinPartidaFragment
 import com.example.proyectofinal_adivinaquien_dd.objects.Avatar
 import com.example.proyectofinal_adivinaquien_dd.objects.Caracteristica
+import com.example.proyectofinal_adivinaquien_dd.sqlite.SQLiteContract
+import com.example.proyectofinal_adivinaquien_dd.sqlite.SQLiteDBHelper
 import com.example.proyectofinal_adivinaquien_dd.viewmodels.PreguntaViewModel
 
 class UnJugadorActivity : AppCompatActivity() {
@@ -27,11 +32,14 @@ class UnJugadorActivity : AppCompatActivity() {
 
     private var imgViews : MutableList<ImageView> = mutableListOf()
 
+    private lateinit var dbHelper: SQLiteDBHelper
+
     private lateinit var btnSalir : Button
     private lateinit var imgBtnAdivinar : ImageView
     private lateinit var btnPreguntar : Button
     private lateinit var txtScore : TextView
     private lateinit var txtMovimientos : TextView
+    private lateinit var txtPartidas : TextView
 
     private lateinit var avatarEncontrar : Avatar
 
@@ -44,6 +52,8 @@ class UnJugadorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_un_jugador)
         this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN)
+
+        dbHelper = SQLiteDBHelper(this)
 
         val maxPos = ListaAvatares.arrayAvatares.size - 1
         val posRand = (0..maxPos).random()
@@ -117,7 +127,6 @@ class UnJugadorActivity : AppCompatActivity() {
         }
 
         viewModel.preguntaSelected.observe(this, Observer { item ->
-            Toast.makeText(this, item.toString(), Toast.LENGTH_LONG).show()
             compararRandom(item)
             val f = supportFragmentManager.findFragmentByTag("Preguntas")
             if(f != null){
@@ -131,6 +140,12 @@ class UnJugadorActivity : AppCompatActivity() {
         txtScore.text = score.toString()
         txtMovimientos = findViewById(R.id.txtMovimientos)
         txtMovimientos.text = movimientos.toString()
+
+        val dbR = dbHelper.readableDatabase
+        val n = DatabaseUtils.queryNumEntries(dbR, SQLiteContract.TablaScore.NAME, null)
+
+        txtPartidas = findViewById(R.id.txtPartidas)
+        txtPartidas.text = n.toString()
 
     }
 
@@ -194,6 +209,23 @@ class UnJugadorActivity : AppCompatActivity() {
     }
 
     fun finPartida(){
-        FinPartidaFragment(this,"¡Ganaste!", score, movimientos).show()
+        val db = dbHelper.writableDatabase
+
+        val values = ContentValues().apply {
+            put(SQLiteContract.TablaScore.Score, score)
+            put(SQLiteContract.TablaScore.Movimientos, movimientos)
+        }
+
+        val newRowId = db?.insert(SQLiteContract.TablaScore.NAME, null, values)
+
+        var msg : String
+
+        if(score > 0){
+            msg = "Ganaste"
+        }else{
+            msg = "Perdiste"
+        }
+
+        FinPartidaFragment(this,msg, score, movimientos).show()
     }
 }
